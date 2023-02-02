@@ -1,0 +1,11 @@
+header {
+    background: #6200EE;
+    padding: 12px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
