@@ -1,6 +1,7 @@
 import React from "react";
 import './Header.css'
 import {Btn} from '../common/Btn'
+import { FaSearch } from 'react-icons/fa'
 
 export const Header = () => (
     <header>
@@ -9,8 +10,9 @@ export const Header = () => (
         </h1>
         <Btn text="Dodaj ogłoszenie"></Btn>
         <div className="search">
+            <FaSearch size="2em" style={{marginRight:"0.5em"}}/>
             <input type="text"/>
-            <button>Szukaj</button>
+            {/*<button>Szukaj</button>*/}
         </div>
     </header>
 );
