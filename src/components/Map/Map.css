@@ -1,4 +1,3 @@
-.map {
-    background: darkgrey;
+.leaflet-container {
     height: 100%;
 }

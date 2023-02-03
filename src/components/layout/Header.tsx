@@ -8,9 +8,9 @@ export const Header = () => (
         <h1>
             <span style={{fontWeight: "600"}}>Mega</span><span style={{fontWeight: "100"}}> Ogłoszenia</span>
         </h1>
-        <Btn text="Dodaj ogłoszenie"></Btn>
+        <Btn text="Dodaj ogłoszenie" />
         <div className="search">
-            <FaSearch size="2em" style={{marginRight:"0.5em"}}/>
+            <FaSearch size="1.7em" style={{marginRight:"0.5em", marginTop: "0.09em", minWidth:"1em"}}/>
             <input type="text"/>
             {/*<button>Szukaj</button>*/}
         </div>
