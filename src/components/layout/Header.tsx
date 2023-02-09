@@ -17,7 +17,7 @@ export const Header = () => {
             <h1>
                 <span style={{fontWeight: "600"}}>Mega</span><span style={{fontWeight: "100"}}> Ogłoszenia</span>
             </h1>
-            <Btn text="Dodaj ogłoszenie"/>
+            <Btn to="/add" text="Dodaj ogłoszenie"/>
             <form className="search" onSubmit={setSearchFromLocalState}>
                 <FaSearch size="1.7em" style={{marginRight: "0.5em", marginTop: "0.09em", minWidth: "1em"}}/>
                 <input type="text" value={inputVal} onChange={e => setInputVal(e.target.value)}/>

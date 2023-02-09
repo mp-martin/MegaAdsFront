@@ -1,7 +1,8 @@
-button {
+button, .btn {
     border: 0;
     background: #2A913E;
     text-transform: uppercase;
+    text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 1rem;
