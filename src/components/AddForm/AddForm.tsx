@@ -1,7 +1,9 @@
 import React, {FormEvent, useState} from "react";
 import {Btn} from "../common/Btn";
-import "./AddForm.css"
 import {geocode} from "../../utils/geocoding";
+import {apiUrl} from "../../config/api";
+
+import "./AddForm.css"
 
 export const AddForm = () => {
 
@@ -24,7 +26,7 @@ export const AddForm = () => {
 
             const {lat, lon} = await geocode(form.address);
 
-            const res = await fetch(`http://localhost:3001/ad`, {
+            const res = await fetch(`${apiUrl}/ad`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

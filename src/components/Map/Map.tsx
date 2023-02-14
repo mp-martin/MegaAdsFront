@@ -2,11 +2,12 @@ import React, {useContext, useEffect, useState} from "react";
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
 import {SearchContext} from "../../contexts/search.context";
 import {SimpleAdEntity} from "types";
+import {SingleAd} from "./SingleAd";
+import {apiUrl} from "../../config/api";
+
 import './Map.css'
 import 'leaflet/dist/leaflet.css';
 import '../../utils/fix-map-icon'
-import {SingleAd} from "./SingleAd";
-
 
 export const Map = () => {
     const {search} = useContext(SearchContext);
@@ -14,7 +15,7 @@ export const Map = () => {
 
     useEffect(() => {
         (async () => {
-            const res = await fetch(`http://localhost:3001/ad/search/${search}`);
+            const res = await fetch(`${apiUrl}/ad/search/${search}`);
             const ads = await res.json();
             setAds(ads);
         })();
