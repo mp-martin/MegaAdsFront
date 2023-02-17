@@ -1,12 +1,9 @@
-/*.form-wrapper {*/
-/*    height: 100%
- */
+.form-wrapper {
+   display: flex;
+}
 
 .add-form {
-    width: 50vh;
-    margin: 0 auto;
-    margin-top: 50px;
-    /*background: darkgrey;*/
+    margin: 1rem auto;
 }
 .add-form label {
     font-weight: bold;
@@ -31,4 +28,10 @@
 .add-form button {
     margin-top: 40px;
     width: 100%
+}
+
+@media screen and (max-width: 570px) {
+    .add-form {
+        width: 80%
+    }
 }
